@@ -1,0 +1,54 @@
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.purle{
+color: #57d131; /* text color + color overlay */
+font-family: 'Source Code Pro', monospace;
+font-size: 15.9vw;
+font-size: 15.9vh;
+margin: auto;
+border-right: .05em solid #57d131;
+width: 29.5em;
+width: 5ch;
+margin-bottom: 2em;
+margin-top: 2em;
+white-space: nowrap;
+overflow: hidden;
+-webkit-animation: typing 1.5s steps(5, end),
+blink-caret .5s step-end infinite alternate;
+-webkit-user-select: none;
+}
+
+body{
+  overflow:hidden;
+  background-color: #f0feee;
+}
+button{
+-webkit-user-select: none;
+margin:auto;
+width: 27vw;
+height: 10vh;
+-moz-border-radius: 36px;
+-webkit-border-radius: 36px;
+border-radius: 36px; /* border radius */
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box; /* prevents bg color from leaking outside the border */
+background-color: #57d131; /* layer fill content */
+
+border: 0;
+border-style: solid;
+outline: none;
+}
+
+button:active{
+  background-color: #51ba30;
+}
+.text{
+-webkit-user-select: none;
+color: #fff; /* text color */
+font-family: 'Source Code Pro', monospace;
+font-size: 5vw;
+font-size: 5vh;
+}
